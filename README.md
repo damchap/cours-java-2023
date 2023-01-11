@@ -31,6 +31,7 @@ ce cours est un cours de java pour les débutants et les personnes qui veulent a
   - [📖 objet Matiere](#-objet-matiere)
   - [📖 objet Etudiant](#-objet-etudiant)
   - [📒 Diagrame de classe](#-diagrame-de-classe)
+- 
 
 ## 📖 Introduction
 
@@ -92,6 +93,31 @@ Etudiant "1" *--> "matieres *" Matiere
 
 
 ``` 
+## PEX 11 janvier 2023
+
+### LIVRABLES:
+     Un PDF précisant le binôme.
+      Un zip contenant les 3 classes Appli, Eleve et Matiere.
+
+### PARTIE 1:
+1. dmder nom élève, matricule, nb notes à saisir
+2. faire boucle "donner titre, coef, note"
+3. faire moyenne des notes saisies
+
+Matière n° 1
+     
+    Titre : ____
+     Coef. : ____
+     Note  : ____
+Matière n° 2
+     
+    Titre : ____
+(...)
+
+### PARTIE 2:
+1. maintenant on a +ieurs élèves
+2. ajouter une sur-boucle: pour chaque élève, faire boucle "donner titre, coef, note" + moyenne de l'élève
+3. classer (Z-A) par moyenne des élèves
 
 ## 📝 License
 

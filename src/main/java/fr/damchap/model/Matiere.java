@@ -15,6 +15,10 @@ public class Matiere {
         this.note = note;
     }
 
+    public Matiere() {
+
+    }
+
     public int getIdMatiere() {
         return idMatiere;
     }

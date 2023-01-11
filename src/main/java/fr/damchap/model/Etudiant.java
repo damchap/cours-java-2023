@@ -4,24 +4,28 @@ import java.util.ArrayList;
 
 public class Etudiant {
 
-    private int idEtudiant;
+    private String matricule;
 
     private String nom;
 
     private ArrayList<Matiere> matieres;
 
-    public Etudiant(int idEtudiant, String nom, ArrayList<Matiere> matieres) {
-        this.idEtudiant = idEtudiant;
+    public Etudiant(String matricule, String nom, ArrayList<Matiere> matieres) {
+        this.matricule = matricule;
         this.nom = nom;
         this.matieres = matieres;
     }
 
-    public int getIdEtudiant() {
-        return idEtudiant;
+    public Etudiant() {
+
     }
 
-    public void setIdEtudiant(int idEtudiant) {
-        this.idEtudiant = idEtudiant;
+    public String getMatricule() {
+        return matricule;
+    }
+
+    public void setMatricule(String matricule) {
+        this.matricule = matricule;
     }
 
     public String getNom() {
@@ -42,8 +46,8 @@ public class Etudiant {
 
     @Override
     public String toString() {
-        return "etudiant{" +
-                "idEtudiant=" + idEtudiant +
+        return "Etudiant{" +
+                "matricule='" + matricule + '\'' +
                 ", nom='" + nom + '\'' +
                 ", matieres=" + matieres +
                 '}';

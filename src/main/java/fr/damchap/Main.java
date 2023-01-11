@@ -4,28 +4,42 @@ import fr.damchap.model.Etudiant;
 import fr.damchap.model.Matiere;
 
 import java.util.ArrayList;
+import java.util.Scanner;
+
+import static fr.damchap.controller.EtudiantController.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        Matiere matiere1 = new Matiere(1, "Java", 2, 10);
-        Matiere matiere2 = new Matiere(2, "C#", 2, 12);
-        Matiere matiere3 = new Matiere(3, "PHP", 2, 14);
-        Matiere matiere4 = new Matiere(4, "Python", 2, 16);
-        Matiere matiere5 = new Matiere(5, "C++", 2, 18);
-
-        // liste des matières
-        ArrayList<Matiere> matieres = new ArrayList<>();
-        matieres.add(matiere1);
-        matieres.add(matiere2);
-        matieres.add(matiere3);
-        matieres.add(matiere4);
-        matieres.add(matiere5);
+        // menu pour creer un utilisateur et l'afficher
+        Scanner sc = new Scanner(System.in);
+        int choix = 0;
+        while (choix < 4) {
 
 
-        Etudiant etudiant = new Etudiant(1, "Damien", matieres);
+            // demander a l'utilisateur
+            System.out.println("Bonjour, veuillez choisir une option");
+            System.out.println("1. Créer un étudiant");
+            System.out.println("3. Afficher les étudiants");
+            System.out.println("4. Quitter");
 
-        System.out.println(etudiant.toString());
+            choix = sc.nextInt();
+            switch (choix) {
+                case 1:
+                    creerEtudiant();
+                    break;
+                case 3:
+                    afficherEtudiants();
+                    break;
+                case 4:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Veuillez saisir un choix valide");
+                    break;
+            }
+        }
+
 
 
     }
